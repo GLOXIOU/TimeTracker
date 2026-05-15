@@ -1,0 +1,11 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "description": "Un outil de suivi du temps léger tournant en arrière-plan",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

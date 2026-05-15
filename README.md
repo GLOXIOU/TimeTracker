@@ -27,6 +27,10 @@ Use TimeTracker, a screen time tracker with a beautiful web interface
    git clone https://github.com/GLOXIOU/TimeTracker
    cd TimeTracker
    ```
+2. Right-click on the `start.vbs` file and select **Create shortcut**.
+   Press `Win + R`, type `shell:startup`, and press Enter.
+   **Move the shortcut** you just created into this Startup folder.
+   The tracker will now run completely in the background on every boot without any console window. To stop it, use the Task Manager and kill the `Node.js` process.
 
 ---
 
