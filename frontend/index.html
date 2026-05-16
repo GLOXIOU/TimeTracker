@@ -51,67 +51,117 @@
                 </div>
                 
                 <div class="card main-chart-card">
-                    <h2>Aperçu de l'Activité</h2>
+                    <h2>Activité actuelle</h2>
                     <div class="chart-container">
-                        <div class="dummy-chart"></div>
+                        <div class="activity-timeline">
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: linear-gradient(135deg, #f56565, #ed8936);"></div>
+                                <div class="activity-content">
+                                    <div class="activity-header">
+                                        <span class="activity-title">Chrome - youtube.com</span>
+                                        <span class="activity-time">12min42</span>
+                                    </div>
+                                    <div class="activity-bar-wrapper">
+                                        <div class="activity-bar-bg">
+                                            <div class="activity-bar-fill" style="width: 3%; background: linear-gradient(135deg, #f56565, #ed8936);"></div>
+                                        </div>
+                                        <span class="activity-percent">3%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: linear-gradient(135deg, #805ad5, #d53f8c);"></div>
+                                <div class="activity-content">
+                                    <div class="activity-header">
+                                        <span class="activity-title">Discord</span>
+                                        <span class="activity-time">4h09</span>
+                                    </div>
+                                    <div class="activity-bar-wrapper">
+                                        <div class="activity-bar-bg">
+                                            <div class="activity-bar-fill" style="width: 63%; background: linear-gradient(135deg, #805ad5, #d53f8c);"></div>
+                                        </div>
+                                        <span class="activity-percent">63%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: linear-gradient(135deg, #4299e1, #3182ce);"></div>
+                                <div class="activity-content">
+                                    <div class="activity-header">
+                                        <span class="activity-title">VS Code</span>
+                                        <span class="activity-time">2h15</span>
+                                    </div>
+                                    <div class="activity-bar-wrapper">
+                                        <div class="activity-bar-bg">
+                                            <div class="activity-bar-fill" style="width: 34%; background: linear-gradient(135deg, #4299e1, #3182ce);"></div>
+                                        </div>
+                                        <span class="activity-percent">34%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="card categories-card">
-                    <h2>Catégories</h2>
-                    <ul class="category-list">
-                        <li>
-                            <span class="cat-name">Développement</span>
-                            <span class="cat-time">02:15:00</span>
-                        </li>
-                        <li>
-                            <span class="cat-name">Navigation Web</span>
-                            <span class="cat-time">01:05:00</span>
-                        </li>
-                        <li>
-                            <span class="cat-name">Design</span>
-                            <span class="cat-time">01:03:12</span>
-                        </li>
-                    </ul>
-                    <button class="primary-btn glass-btn-full">Plus de détails</button>
-                </div>
-                
-                <div class="card categories-card">
-                    <h2>Applications</h2>
-                    <ul class="category-list">
-                        <li>
-                            <span class="cat-name">VS Code</span>
-                            <span class="cat-time">02:00:00</span>
-                        </li>
-                        <li>
-                            <span class="cat-name">Figma</span>
-                            <span class="cat-time">01:03:12</span>
-                        </li>
-                        <li>
-                            <span class="cat-name">Spotify</span>
-                            <span class="cat-time">00:30:00</span>
-                        </li>
-                    </ul>
-                    <button class="primary-btn glass-btn-full">Gérer les applications</button>
-                </div>
+                <div class="bottom-cards-wrapper">
+                    <div class="card categories-card">
+                        <h2>Catégories</h2>
+                        <ul class="category-list">
+                            <li>
+                                <span class="cat-name">Développement</span>
+                                <span class="cat-time">02:15:00</span>
+                            </li>
+                            <li>
+                                <span class="cat-name">Navigation Web</span>
+                                <span class="cat-time">01:05:00</span>
+                            </li>
+                            <li>
+                                <span class="cat-name">Design</span>
+                                <span class="cat-time">01:03:12</span>
+                            </li>
+                        </ul>
+                        <button class="primary-btn glass-btn-full">Plus de détails</button>
+                    </div>
+                    
+                    <div class="card categories-card">
+                        <h2>Applications</h2>
+                        <ul class="category-list">
+                            <li>
+                                <span class="cat-name">VS Code</span>
+                                <span class="cat-time">02:00:00</span>
+                            </li>
+                            <li>
+                                <span class="cat-name">Figma</span>
+                                <span class="cat-time">01:03:12</span>
+                            </li>
+                            <li>
+                                <span class="cat-name">Spotify</span>
+                                <span class="cat-time">00:30:00</span>
+                            </li>
+                        </ul>
+                        <button class="primary-btn glass-btn-full">Gérer les applications</button>
+                    </div>
 
-                <div class="card categories-card">
-                    <h2>Onglets Navigateur</h2>
-                    <ul class="category-list">
-                        <li>
-                            <span class="cat-name">GitHub</span>
-                            <span class="cat-time">00:45:00</span>
-                        </li>
-                        <li>
-                            <span class="cat-name">StackOverflow</span>
-                            <span class="cat-time">00:15:00</span>
-                        </li>
-                        <li>
-                            <span class="cat-name">Documentation</span>
-                            <span class="cat-time">00:05:00</span>
-                        </li>
-                    </ul>
-                    <button class="primary-btn glass-btn-full">Gérer le navigateur</button>
+                    <div class="card categories-card">
+                        <h2>Onglets Navigateur</h2>
+                        <ul class="category-list">
+                            <li>
+                                <span class="cat-name">GitHub</span>
+                                <span class="cat-time">00:45:00</span>
+                            </li>
+                            <li>
+                                <span class="cat-name">StackOverflow</span>
+                                <span class="cat-time">00:15:00</span>
+                            </li>
+                            <li>
+                                <span class="cat-name">Documentation</span>
+                                <span class="cat-time">00:05:00</span>
+                            </li>
+                        </ul>
+                        <button class="primary-btn glass-btn-full">Gérer le navigateur</button>
+                    </div>
                 </div>
             </section>
         </div>
