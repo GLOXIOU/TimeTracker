@@ -1,0 +1,118 @@
+.main-chart-card {
+    grid-column: 1 / -1;
+}
+
+.activity-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 1.25rem 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-glass);
+    transition: box-shadow 0.3s var(--curve), background 0.3s var(--curve);
+}
+
+.activity-item:hover {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.activity-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: inset 0 0 5px rgba(255,255,255,0.5), 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.activity-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.activity-title {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.activity-time {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.activity-bar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.activity-percent {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    min-width: 3ch;
+    text-align: right;
+}
+
+.activity-bar-bg {
+    flex: 1;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.activity-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bottom-cards-wrapper {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.bottom-cards-wrapper .card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.category-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.category-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category-list li:last-child {
+    border-bottom: none;
+}

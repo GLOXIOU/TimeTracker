@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeTracker</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TimeTracker - Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <div class="gradient-background">
@@ -17,10 +18,11 @@
     
     <main class="container">
         <header>
-            <h1>TimeTracker</h1>
+            <h1>TimeTracker - Dashboard</h1>
             <div class="header-actions">
-                <button class="primary-btn rewind-btn">✨ Rewind</button>
-                <button class="primary-btn">Options</button>
+                <a href="../stats/stats.html" class="primary-btn stats-btn">Statistiques</a>
+                <a href="../rewind/rewind.html" class="primary-btn rewind-btn">✨ Rewind</a>
+                <button class="primary-btn options-btn">Options</button>
             </div>
         </header>
 
@@ -65,7 +67,7 @@
                                         <div class="activity-bar-bg">
                                             <div class="activity-bar-fill" style="width: 3%; background: linear-gradient(135deg, #f56565, #ed8936);"></div>
                                         </div>
-                                        <span class="activity-percent">3%</span>
+                                        <span class="activity-percent">3% du temps total</span>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +83,7 @@
                                         <div class="activity-bar-bg">
                                             <div class="activity-bar-fill" style="width: 63%; background: linear-gradient(135deg, #805ad5, #d53f8c);"></div>
                                         </div>
-                                        <span class="activity-percent">63%</span>
+                                        <span class="activity-percent">63% du temps total</span>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +99,7 @@
                                         <div class="activity-bar-bg">
                                             <div class="activity-bar-fill" style="width: 34%; background: linear-gradient(135deg, #4299e1, #3182ce);"></div>
                                         </div>
-                                        <span class="activity-percent">34%</span>
+                                        <span class="activity-percent">34% du temps total</span>
                                     </div>
                                 </div>
                             </div>

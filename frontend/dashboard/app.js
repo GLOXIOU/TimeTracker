@@ -1,4 +1,4 @@
-const optionsBtn = document.querySelector('.primary-btn');
+const optionsBtn = document.querySelector('.options-btn');
 const modal = document.querySelector('.modal');
 const closeBtn = modal.querySelector('.close-btn');
 
