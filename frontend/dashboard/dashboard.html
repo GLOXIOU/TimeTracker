@@ -22,7 +22,6 @@
             <div class="header-actions">
                 <a href="../stats/stats.html" class="primary-btn stats-btn">Statistiques</a>
                 <a href="../rewind/rewind.html" class="primary-btn rewind-btn">✨ Rewind</a>
-                <button class="primary-btn options-btn">Options</button>
             </div>
         </header>
         <div class="main-card-wrapper card">
@@ -123,7 +122,7 @@
                                 <span class="cat-time">01:03:12</span>
                             </li>
                         </ul>
-                        <button class="primary-btn glass-btn-full">Gérer les catégories</button>
+                        <button class="primary-btn glass-btn-full options-btn">Gérer les catégories</button>
                     </div>
                     
                     <div class="card categories-card">
@@ -169,10 +168,69 @@
     </main>
 
     <div class="modal hidden">
-        <div class="modal-content card">
+        <div class="modal-content">
             <button class="close-btn">&times;</button>
-            <h2>Paramètres</h2>
-            <p>Ici bientôt vos options !</p>
+            <h2>Gérer les catégories</h2>
+            
+            <div class="category-management">
+                <div class="add-category-section">
+                    <input type="text" class="glass-input" placeholder="Nouvelle catégorie...">
+                    <button class="primary-btn">Créer</button>
+                </div>
+                
+                <div class="app-assignments-section">
+                    <h3>Applications récentes</h3>
+                    <div class="app-assignments-list">
+                        <div class="app-row">
+                            <span class="app-name">VS Code</span>
+                            <select class="glass-select">
+                                <option value="dev" selected>Développement</option>
+                                <option value="web">Navigation Web</option>
+                                <option value="design">Design</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="app-row">
+                            <span class="app-name">Chrome</span>
+                            <select class="glass-select">
+                                <option value="dev">Développement</option>
+                                <option value="web" selected>Navigation Web</option>
+                                <option value="design">Design</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="app-row">
+                            <span class="app-name">Figma</span>
+                            <select class="glass-select">
+                                <option value="dev">Développement</option>
+                                <option value="web">Navigation Web</option>
+                                <option value="design" selected>Design</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="app-row">
+                            <span class="app-name">Spotify</span>
+                            <select class="glass-select">
+                                <option value="" selected disabled>Sélectionner...</option>
+                                <option value="dev">Développement</option>
+                                <option value="web">Navigation Web</option>
+                                <option value="design">Design</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="app-row">
+                            <span class="app-name">Discord</span>
+                            <select class="glass-select">
+                                <option value="" selected disabled>Sélectionner...</option>
+                                <option value="dev">Développement</option>
+                                <option value="web">Navigation Web</option>
+                                <option value="design">Design</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     

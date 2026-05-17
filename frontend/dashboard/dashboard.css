@@ -116,3 +116,84 @@
 .category-list li:last-child {
     border-bottom: none;
 }
+
+.category-management {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+}
+
+.add-category-section {
+    display: flex;
+    gap: 1rem;
+}
+
+.add-category-section .glass-input {
+    flex: 1;
+}
+
+.app-assignments-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    min-height: 0;
+}
+
+.app-assignments-section h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.app-assignments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    max-height: 40vh;
+}
+
+.app-assignments-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.app-assignments-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.app-assignments-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.app-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    border: 1px solid var(--border-glass);
+    transition: background 0.3s var(--curve);
+}
+
+.app-row:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.app-name {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.app-row .glass-select {
+    padding: 0.4rem 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    min-width: 150px;
+}
+
