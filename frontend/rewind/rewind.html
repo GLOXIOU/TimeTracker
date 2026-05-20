@@ -16,7 +16,7 @@
         <div class="noise-overlay"></div>
     </div>
     
-    <main class="container">
+    <main class="container" id="rewind-setup">
         <header>
             <h1>✨ Rewind</h1>
             <div class="header-actions">
@@ -25,11 +25,70 @@
             </div>
         </header>
 
-        <div class="main-card-wrapper card">
-            <h2>Votre bilan de l'année</h2>
-            <p>Retrouvez bientôt un résumé étincelant de votre activité sur l'année.</p>
+        <div class="main-card-wrapper card setup-card">
+            <h2>Générer votre Rewind</h2>
+            <div class="setup-form">
+                <div class="preset-container" id="preset-container">
+                    <div class="preset-slider" id="preset-slider"></div>
+                    <button class="preset-btn active" data-preset="week">Semaine</button>
+                    <button class="preset-btn" data-preset="month">Mois</button>
+                    <button class="preset-btn" data-preset="year">Année</button>
+                    <button class="preset-btn" data-preset="custom">Personnalisé</button>
+                </div>
+                <div class="custom-dates hidden" id="custom-dates-group">
+                    <div class="input-group">
+                        <label>Depuis le :</label>
+                        <input type="date" class="glass-input" id="rewind-date-start" value="2024-01-01">
+                    </div>
+                    <div class="input-group">
+                        <label>Jusqu'au :</label>
+                        <input type="date" class="glass-input" id="rewind-date-end" value="2024-12-31">
+                    </div>
+                </div>
+                <button class="primary-btn launch-btn" id="launch-rewind-btn">✨ Lancer le Rewind</button>
+            </div>
         </div>
     </main>
+
+    <div class="rewind-presentation" id="rewind-presentation" style="display: none;">
+        <div class="rewind-slide active" id="slide-1">
+            <h2 class="slide-title">Prêt ?</h2>
+            <p class="slide-subtitle">Voici votre période en un coup d'œil...</p>
+        </div>
+        
+        <div class="rewind-slide" id="slide-2">
+            <h2 class="slide-title">Temps Total</h2>
+            <div class="big-stat" id="stat-total-time">4 032h</div>
+            <p class="slide-subtitle">Passées devant un écran.</p>
+        </div>
+        
+        <div class="rewind-slide" id="slide-3">
+            <h2 class="slide-title">Votre App Favorite</h2>
+            <div class="app-icon-wrapper">
+                <div class="app-icon">VS</div>
+            </div>
+            <div class="big-stat" id="stat-top-app">VS Code</div>
+            <p class="slide-subtitle">Avec 1 234h de productivité.</p>
+        </div>
+
+        <div class="rewind-slide" id="slide-4">
+            <h2 class="slide-title">Catégorie Reine</h2>
+            <div class="big-stat" id="stat-top-cat">Développement</div>
+            <p class="slide-subtitle">Un focus impressionnant.</p>
+        </div>
+
+        <div class="rewind-slide" id="slide-5">
+            <h2 class="slide-title">Fin du Rewind</h2>
+            <p class="slide-subtitle">À la prochaine !</p>
+            <button class="primary-btn" id="close-rewind-btn">Retour</button>
+        </div>
+
+        <div class="rewind-progress">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="rewind.js"></script>
 </body>
