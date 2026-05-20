@@ -50,46 +50,165 @@
         </div>
     </main>
 
-    <div class="rewind-presentation" id="rewind-presentation" style="display: none;">
+    <div class="rewind-presentation" id="rewind-presentation" style="display: none;" data-theme="0">
+        <div class="rewind-dynamic-bg">
+            <div class="rewind-blob blob-1"></div>
+            <div class="rewind-blob blob-2"></div>
+            <div class="rewind-blob blob-3"></div>
+            <div class="noise-overlay"></div>
+        </div>
+
+        <div class="rewind-progress-container" id="rewind-progress-container"></div>
+
         <div class="rewind-slide active" id="slide-1">
-            <h2 class="slide-title">Prêt ?</h2>
-            <p class="slide-subtitle">Voici votre période en un coup d'œil...</p>
+            <div class="slide-content center-content">
+                <p class="period-display anim-stagger-1"></p>
+                <h2 class="giant-text anim-stagger-2">Prêt ?</h2>
+                <p class="slide-subtitle anim-stagger-3">Voici le récapitulatif de votre activité...</p>
+                <button class="rewind-action-btn start-presentation-btn anim-stagger-3" id="start-presentation-btn">
+                    Commencer <span class="arrow">→</span>
+                </button>
+            </div>
         </div>
         
         <div class="rewind-slide" id="slide-2">
-            <h2 class="slide-title">Temps Total</h2>
-            <div class="big-stat" id="stat-total-time">4 032h</div>
-            <p class="slide-subtitle">Passées devant un écran.</p>
+            <div class="bg-mega-text anim-slow-fade">4032</div>
+            <div class="glass-panel anim-scale-up">
+                <h2 class="slide-title">Temps Total</h2>
+                <div class="big-stat gradient-orange anim-stagger-1">4 032h</div>
+                <p class="slide-subtitle anim-stagger-2">Passées devant un écran.</p>
+                <div class="divider anim-stagger-3"></div>
+                <p class="slide-detail anim-stagger-3">C'est la preuve d'un dévouement sans faille.<br>Ou d'un cruel manque de sommeil.</p>
+            </div>
         </div>
         
         <div class="rewind-slide" id="slide-3">
-            <h2 class="slide-title">Votre App Favorite</h2>
-            <div class="app-icon-wrapper">
-                <div class="app-icon">VS</div>
+            <div class="slide-layout-split">
+                <div class="split-text align-left">
+                    <h2 class="slide-title anim-stagger-1">Votre App Favorite</h2>
+                    <p class="slide-subtitle anim-stagger-2">Celle qui a capturé votre attention.</p>
+                    <div class="spacer"></div>
+                    <div class="big-stat gradient-blue anim-stagger-3">VS Code</div>
+                    <p class="slide-detail anim-stagger-3">1 234h de productivité fulgurante.</p>
+                </div>
+                <div class="split-visual anim-spring-up box-3d-wrapper">
+                    <div class="app-icon-3d">
+                        <div class="app-icon-inner">VS</div>
+                    </div>
+                </div>
             </div>
-            <div class="big-stat" id="stat-top-app">VS Code</div>
-            <p class="slide-subtitle">Avec 1 234h de productivité.</p>
         </div>
 
         <div class="rewind-slide" id="slide-4">
-            <h2 class="slide-title">Catégorie Reine</h2>
-            <div class="big-stat" id="stat-top-cat">Développement</div>
-            <p class="slide-subtitle">Un focus impressionnant.</p>
+            <div class="slide-layout-split">
+                <div class="split-visual box-3d-wrapper">
+                    <div class="glass-panel ranking-panel anim-scale-up">
+                        <div class="ranking-list">
+                            <div class="ranking-item anim-stagger-1">
+                                <span class="ranking-rank">1</span>
+                                <span class="ranking-name">youtube.com</span>
+                                <span class="ranking-time">142h</span>
+                            </div>
+                            <div class="ranking-item anim-stagger-2">
+                                <span class="ranking-rank">2</span>
+                                <span class="ranking-name">github.com</span>
+                                <span class="ranking-time">85h</span>
+                            </div>
+                            <div class="ranking-item anim-stagger-3">
+                                <span class="ranking-rank">3</span>
+                                <span class="ranking-name">stackoverflow.com</span>
+                                <span class="ranking-time">42h</span>
+                            </div>
+                            <div class="ranking-item anim-stagger-3">
+                                <span class="ranking-rank">4</span>
+                                <span class="ranking-name">chatgpt.com</span>
+                                <span class="ranking-time">38h</span>
+                            </div>
+                            <div class="ranking-item anim-stagger-3">
+                                <span class="ranking-rank">5</span>
+                                <span class="ranking-name">reddit.com</span>
+                                <span class="ranking-time">12h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-text align-left">
+                    <h2 class="slide-title anim-stagger-1">Explorateur Web</h2>
+                    <p class="slide-subtitle anim-stagger-2">Votre top des sites les plus visités.</p>
+                    <div class="spacer"></div>
+                    <div class="big-stat gradient-green anim-stagger-3">Chrome</div>
+                    <p class="slide-detail anim-stagger-3">345 heures naviguées en tout.<br>Toujours en quête de réponses.</p>
+                </div>
+            </div>
         </div>
 
         <div class="rewind-slide" id="slide-5">
-            <h2 class="slide-title">Fin du Rewind</h2>
-            <p class="slide-subtitle">À la prochaine !</p>
-            <button class="primary-btn" id="close-rewind-btn">Retour</button>
+            <div class="glass-panel anim-drop-down">
+                <h2 class="slide-title">Le jour de gloire</h2>
+                <div class="big-stat gradient-pink anim-stagger-1">12 Octobre</div>
+                <p class="slide-subtitle anim-stagger-2">Ce jour-là, rien n'existait à part l'écran.</p>
+                <div class="divider anim-stagger-3"></div>
+                <p class="slide-detail anim-stagger-3">14h et 22m d'activité consécutive.<br>Vous êtes une machine.</p>
+            </div>
         </div>
 
-        <div class="rewind-progress">
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
+        <div class="rewind-slide" id="slide-6">
+            <div class="slide-content center-content overflow-visible">
+                <h2 class="slide-title subtitle-above anim-drop-down">Catégorie Reine</h2>
+                <div class="big-stat giant-gradient-text anim-pop-out">Développement</div>
+                <p class="slide-subtitle anim-slide-up">Un focus d'acier. Rien ne vous arrête dans cette quête incroyable.</p>
+            </div>
+        </div>
+
+        <div class="rewind-slide" id="slide-7">
+            <div class="slide-content center-content">
+                <div class="summary-card anim-scale-up" id="exportable-summary">
+                    <div class="summary-header">
+                        <span>Mon Rewind</span>
+                        <span class="period-display small-period"></span>
+                    </div>
+                    
+                    <div class="summary-highlight">
+                        <div class="highlight-label">Temps Total</div>
+                        <div class="highlight-value giant-gradient-text">4 032h</div>
+                    </div>
+                    
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <span class="label">Top App</span>
+                            <span class="value gradient-blue">VS Code</span>
+                            <span class="sub-value">1 234h</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Top Web</span>
+                            <span class="value gradient-green">YouTube</span>
+                            <span class="sub-value">142h</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Top Catégorie</span>
+                            <span class="value gradient-orange">Dev</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Top Jour</span>
+                            <span class="value gradient-pink">12 Oct.</span>
+                        </div>
+                    </div>
+                    <div class="summary-footer">
+                        <span class="logo">TimeTracker</span>
+                    </div>
+                </div>
+                <div class="end-actions mt-2 anim-stagger-2">
+                    <button class="rewind-action-btn secondary-btn" id="export-img-btn">
+                        <span class="icon">📸</span> Exporter la carte
+                    </button>
+                    <a href="../dashboard/dashboard.html" class="rewind-action-btn" id="close-rewind-btn">Dashboard</a>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- html2canvas loaded dynamically for export later in js, avoiding html comment for js -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <script src="rewind.js"></script>
 </body>
 </html>
